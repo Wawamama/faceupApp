@@ -9,15 +9,15 @@ const router = express.Router()
 
 cloudinary.config({
 	cloud_name: 'daxjdptqt',
-	api_key: '447328635917646',
-	api_secret: 'g_fmY0U2ZKqzpYe7UaIV3NiFDYU',
+	api_key: '<API_KEY>',
+	api_secret: '<API_SECRET>',
 })
 
 const fetchFaceAPI = async imgUrl => {
 	console.log('fetching faceAPI')
 	const options = {
 		json: {
-			apiKey: '5c0a5d392c1745d2ae84dc0b1483bfd2',
+			apiKey: '<API_KEY>',
 			image: imgUrl,
 		},
 	}
